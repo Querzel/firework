@@ -2,22 +2,27 @@
 Simple Routes
 */
 Router.route('/', function() {
+    document.title = "Home";
     this.render('home');
 });
 
 Router.route('/account', function() {
+    document.title = "Account";
     this.render('account');
 });
 
 Router.route('/timeline', function() {
+    document.title = "Timeline";
     this.render('timeline');
 });
 
 Router.route('/add', function() {
+    document.title = "Add";
     this.render('items_add');
 });
 
 Router.route('/stats', function() {
+    document.title = "Stats";
     this.render('stats');
 });
 
@@ -63,6 +68,7 @@ Router.route('/items/:id/edit', function() {
 Actor Routes
 */
 Router.route('/actors', function() {
+    document.title = "Actors";
     this.render('actors');
 });
 
@@ -92,6 +98,7 @@ Router.route('/actors/:actor', function() {
 Action Routes
 */
 Router.route('/actions', function() {
+    document.title = "Actions";
     this.render('actions');
 });
 
@@ -121,6 +128,7 @@ Router.route('/actions/:action', function() {
 Units Routes
 */
 Router.route('/units', function() {
+    document.title = "Units";
     this.render('units');
 });
 
